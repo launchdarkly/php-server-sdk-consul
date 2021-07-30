@@ -27,7 +27,7 @@ class ConsulFeatureRequester extends FeatureRequesterBase
         $this->_prefix = $prefix . '/';
     }
 
-    protected function readItemString($namespace, $key)
+    protected function readItemString(string $namespace, string $key): ?string
     {
         try {
             $resp = $this->_kvClient->get($this->makeKey($namespace, $key));
@@ -44,7 +44,7 @@ class ConsulFeatureRequester extends FeatureRequesterBase
         return base64_decode($results[0]['Value']);
     }
 
-    protected function readItemStringList($namespace)
+    protected function readItemStringList(string $namespace): ?array
     {
         try {
             $resp = $this->_kvClient->get($this->makeKey($namespace, ''), array('recurse' => true));

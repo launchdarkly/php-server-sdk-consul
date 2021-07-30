@@ -1,6 +1,8 @@
 <?php
 namespace LaunchDarkly\Integrations;
 
+use \LaunchDarkly\Impl\Integrations\ConsulFeatureRequester;
+
 /**
  * Integration with a Consul data store.
  */
@@ -30,7 +32,7 @@ class Consul
     public static function featureRequester($options = array())
     {
         return function ($baseUri, $sdkKey, $baseOptions) use ($options) {
-            return new Impl\ConsulFeatureRequester($baseUri, $sdkKey, array_merge($baseOptions, $options));
+            return new ConsulFeatureRequester($baseUri, $sdkKey, array_merge($baseOptions, $options));
         };
     }
 }
