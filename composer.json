@@ -1,6 +1,10 @@
 {
     "repositories": [
         {
+            "type": "path",
+            "url": "php-server-sdk-shared-tests"
+        },
+        {
             "type": "git",
             "url": "https://github.com/launchdarkly/php-server-sdk-private.git"
         }
@@ -24,9 +28,18 @@
         "sensiolabs/consul-php-sdk": ">=2.1 <3.0",
         "launchdarkly/server-sdk": "4.0.x-dev"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "launchdarkly/server-sdk-shared-tests": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "LaunchDarkly\\": "src/LaunchDarkly/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaunchDarkly\\Impl\\Integrations\\Tests\\": "tests/"
         }
     },
     "config": {

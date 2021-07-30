@@ -23,7 +23,10 @@ class ConsulFeatureRequester extends FeatureRequesterBase
         $sf = new ServiceFactory($consulOpts);
         $this->_kvClient = $sf->get('kv');
 
-        $prefix = $options['consul_prefix'] ?? 'launchdarkly';
+        $prefix = $options['consul_prefix'] ?? null;
+        if ($prefix === null || $prefix === '') {
+            $prefix = 'launchdarkly';
+        }
         $this->_prefix = $prefix . '/';
     }
 
