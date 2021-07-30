@@ -1,0 +1,24 @@
+{
+    "name": "launchdarkly/server-sdk-consul",
+    "description": "LaunchDarkly PHP SDK Consul integration",
+    "keywords": [
+        "launchdarkly",
+        "launchdarkly php"
+    ],
+    "homepage": "https://github.com/launchdarkly/php-server-sdk-consul",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "LaunchDarkly <sdks@launchdarkly.com>",
+            "homepage": "http://www.launchdarkly.com/"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "sensiolabs/consul-php-sdk": ">=2.1 <3.0",
+        "launchdarkly/server-sdk": "^4"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
