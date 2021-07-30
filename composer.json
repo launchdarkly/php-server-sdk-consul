@@ -10,7 +10,7 @@
         }
     ],
     "name": "launchdarkly/server-sdk-consul",
-    "description": "LaunchDarkly Consul PHP SDK integration",
+    "description": "LaunchDarkly PHP SDK Consul integration",
     "keywords": [
         "launchdarkly",
         "launchdarkly php"
