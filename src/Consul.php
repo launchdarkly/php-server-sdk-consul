@@ -1,12 +1,14 @@
 <?php
 namespace LaunchDarkly\Integrations;
 
+/**
+ * Integration with a Consul data store.
+ */
 class Consul
 {
     /**
      * Configures an adapter for reading feature flag data from Consul.
      *
-     * To use this method, you must have installed the package `sensiolabs/consul-php-sdk`.
      * After calling this method, store its return value in the `feature_requester` property of
      * your client configuration:
      *
@@ -15,7 +17,7 @@ class Consul
      *     $client = new LDClient("sdk_key", $config);
      *
      * For more about using LaunchDarkly with databases, see the
-     * [SDK reference guide](https://docs.launchdarkly.com/v2.0/docs/using-a-persistent-feature-store).
+     * [SDK reference guide](https://docs.launchdarkly.com/sdks/features/storing-data).
      *
      * @param array $options  Configuration settings (can also be passed in the main client configuration):
      *   - `consul_uri`: URI of the Consul host; defaults to `http://localhost:8500`
