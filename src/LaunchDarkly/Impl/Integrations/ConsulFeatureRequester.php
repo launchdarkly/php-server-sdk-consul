@@ -5,6 +5,9 @@ use LaunchDarkly\Impl\Integrations\FeatureRequesterBase;
 use SensioLabs\Consul\Exception\ClientException;
 use SensioLabs\Consul\ServiceFactory;
 
+/**
+ * @internal
+ */
 class ConsulFeatureRequester extends FeatureRequesterBase
 {
     /** @var string */
