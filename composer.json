@@ -26,7 +26,7 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9",
-        "launchdarkly/server-sdk-shared-tests": "dev-master"
+        "launchdarkly/server-sdk-shared-tests": "dev-main"
     },
     "autoload": {
         "psr-4": {
