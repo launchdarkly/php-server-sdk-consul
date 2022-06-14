@@ -8,6 +8,10 @@ jobs:
   - template:
       name: php
 
+branches:
+  - name: main
+  - name: 1.x
+
 documentation:
   gitHubPages: true
   title: LaunchDarkly PHP SDK Consul integration
