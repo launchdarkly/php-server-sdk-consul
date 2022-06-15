@@ -5,7 +5,9 @@ publications:
     description: Packagist
 
 jobs:
-  - template:
+  - docker:
+      image: ldcircleci/php-sdk-release:3
+    template:
       name: php
       skip:
         - test  # unit tests are run in CI with Consul present
