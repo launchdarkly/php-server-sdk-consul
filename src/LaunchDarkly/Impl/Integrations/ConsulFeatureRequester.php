@@ -2,8 +2,8 @@
 namespace LaunchDarkly\Impl\Integrations;
 
 use LaunchDarkly\Impl\Integrations\FeatureRequesterBase;
-use SensioLabs\Consul\Exception\ClientException;
-use SensioLabs\Consul\ServiceFactory;
+use Consul\Exception\ClientException;
+use Consul\Services\KV;
 
 /**
  * @internal
@@ -23,8 +23,7 @@ class ConsulFeatureRequester extends FeatureRequesterBase
         if (isset($options['consul_uri'])) {
             $consulOpts['base_uri'] = $options['consul_uri'];
         }
-        $sf = new ServiceFactory($consulOpts);
-        $this->_kvClient = $sf->get('kv');
+        $this->_kvClient = new KV();
 
         $prefix = $options['consul_prefix'] ?? null;
         if ($prefix === null || $prefix === '') {
