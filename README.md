@@ -8,7 +8,7 @@ The minimum version of the LaunchDarkly PHP SDK for use with this library is 4.0
 
 This version of the package uses version 5.x of the `consul-php-sdk` client. If your application needs to use an earlier version of `consul-php-sdk`, use `launchdarkly/server-sdk-consul` 1.x (for version 2.x of `consul-php-sdk`) or `launchdarkly/server-sdk-consul` 2.x (for version 4.x of `consul-php-sdk`).
 
-The minimum PHP version is 7.3.
+The minimum PHP version is 7.4.
 
 For more information, see [our SDK documentation](https://docs.launchdarkly.com/sdk/features/storing-data).
 

@@ -4,9 +4,6 @@ workflows:
   workflow:
     jobs:
       - linux-test:
-          name: PHP 7.3
-          docker-image: cimg/php:7.3
-      - linux-test:
           name: PHP 7.4
           docker-image: cimg/php:7.4
       - linux-test:
