@@ -6,6 +6,8 @@ This library provides a [Consul](https://www.consul.io/)-backed data source for 
 
 The minimum version of the LaunchDarkly PHP SDK for use with this library is 4.0.0. In earlier versions of the SDK, the Consul integration was bundled in the main SDK package.
 
+This version of the package uses version 4.x of the `consul-php-sdk` client. If your application needs to use an earlier version of `consul-php-sdk`, use a 1.x version of `launchdarkly/server-sdk-consul`.
+
 The minimum PHP version is 7.3.
 
 For more information, see [our SDK documentation](https://docs.launchdarkly.com/sdk/features/storing-data).
