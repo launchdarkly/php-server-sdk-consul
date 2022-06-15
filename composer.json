@@ -20,8 +20,8 @@
         }
     ],
     "require": {
-        "php": ">=7.3",
-        "sensiolabs/consul-php-sdk": "^4",
+        "php": ">=7.4",
+        "friendsofphp/consul-php-sdk": "^5",
         "launchdarkly/server-sdk": "^4"
     },
     "require-dev": {

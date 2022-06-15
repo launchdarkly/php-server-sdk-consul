@@ -2,13 +2,13 @@
 
 [![CircleCI](https://circleci.com/gh/launchdarkly/php-server-sdk-consul.svg?style=svg)](https://circleci.com/gh/launchdarkly/php-server-sdk-consul)
 
-This library provides a [Consul](https://www.consul.io/)-backed data source for the [LaunchDarkly PHP SDK](https://github.com/launchdarkly/php-server-sdk), replacing the default behavior of querying the LaunchDarkly service endpoints. The underlying Consul client implementation is the [`sensiolabs/consul-php-sdk`](https://github.com/FriendsOfPHP/consul-php-sdk) package.
+This library provides a [Consul](https://www.consul.io/)-backed data source for the [LaunchDarkly PHP SDK](https://github.com/launchdarkly/php-server-sdk), replacing the default behavior of querying the LaunchDarkly service endpoints. The underlying Consul client implementation is the [`friendsofphp/consul-php-sdk`](https://github.com/FriendsOfPHP/consul-php-sdk) package.
 
 The minimum version of the LaunchDarkly PHP SDK for use with this library is 4.0.0. In earlier versions of the SDK, the Consul integration was bundled in the main SDK package.
 
-This version of the package uses version 4.x of the `consul-php-sdk` client. If your application needs to use an earlier version of `consul-php-sdk`, use a 1.x version of `launchdarkly/server-sdk-consul`.
+This version of the package uses version 5.x of the `consul-php-sdk` client. If your application needs to use an earlier version of `consul-php-sdk`, use `launchdarkly/server-sdk-consul` 1.x (for version 2.x of `consul-php-sdk`) or `launchdarkly/server-sdk-consul` 2.x (for version 4.x of `consul-php-sdk`).
 
-The minimum PHP version is 7.3.
+The minimum PHP version is 7.4.
 
 For more information, see [our SDK documentation](https://docs.launchdarkly.com/sdk/features/storing-data).
 
@@ -22,7 +22,7 @@ This assumes that you have already installed the LaunchDarkly PHP SDK in your pr
 php composer.phar install launchdarkly/server-sdk-consul --save
 ```
 
-If your project does not already have a dependency on `sensiolabs/consul-php-sdk`, that package will be loaded automatically as a dependency of `launchdarkly/server-sdk-consul`.
+If your project does not already have a dependency on `friendsofphp/consul-php-sdk`, that package will be loaded automatically as a dependency of `launchdarkly/server-sdk-consul`.
 
 3. In your SDK configuration code, configure the Consul integration:
 

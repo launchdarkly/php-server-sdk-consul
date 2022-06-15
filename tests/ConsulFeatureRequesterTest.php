@@ -5,8 +5,8 @@ namespace LaunchDarkly\Impl\Integrations\Tests;
 use LaunchDarkly\FeatureRequester;
 use LaunchDarkly\Integrations\Consul;
 use LaunchDarkly\SharedTest\DatabaseFeatureRequesterTestBase;
-use SensioLabs\Consul\Exception\ClientException;
-use SensioLabs\Consul\ServiceFactory;
+use Consul\Exception\ClientException;
+use Consul\Services\KV;
 
 class ConsulFeatureRequesterTest extends DatabaseFeatureRequesterTestBase
 {
@@ -14,8 +14,7 @@ class ConsulFeatureRequesterTest extends DatabaseFeatureRequesterTestBase
 
     public static function setUpBeforeClass(): void
     {
-        $sf = new ServiceFactory();
-        self::$kvClient = $sf->get('kv');
+        self::$kvClient = new KV();
     }
 
     private static function realPrefix(?string $prefix): string
