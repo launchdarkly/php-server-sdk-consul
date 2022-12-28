@@ -2,6 +2,10 @@
 
 All notable changes to the project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [3.1.0] - 2022-12-28
+### Changed:
+- Relaxed the SDK version dependency constraint to allow this package to work with the upcoming v5.0.0 release of the LaunchDarkly PHP SDK.
+
 ## [3.0.0] - 2022-06-15
 This release changes the integration to use the 5.x version of the Consul client (`friendsofphp/consul-php-sdk`).
 
