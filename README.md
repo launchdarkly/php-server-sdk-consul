@@ -1,6 +1,8 @@
 # LaunchDarkly Server-Side SDK for PHP - Consul integration
 
 [![CircleCI](https://circleci.com/gh/launchdarkly/php-server-sdk-consul.svg?style=svg)](https://circleci.com/gh/launchdarkly/php-server-sdk-consul)
+[![Packagist](https://img.shields.io/packagist/v/launchdarkly/server-sdk-consul.svg?style=flat-square)](https://packagist.org/packages/launchdarkly/server-sdk-consul)
+[![Documentation](https://img.shields.io/static/v1?label=GitHub+Pages&message=API+reference&color=00add8)](https://launchdarkly.github.io/php-server-sdk-consul)
 
 This library provides a [Consul](https://www.consul.io/)-backed data source for the [LaunchDarkly PHP SDK](https://github.com/launchdarkly/php-server-sdk), replacing the default behavior of querying the LaunchDarkly service endpoints. The underlying Consul client implementation is the [`friendsofphp/consul-php-sdk`](https://github.com/FriendsOfPHP/consul-php-sdk) package.
 

@@ -22,7 +22,7 @@
     "require": {
         "php": ">=7.4",
         "friendsofphp/consul-php-sdk": "^5",
-        "launchdarkly/server-sdk": "^4"
+        "launchdarkly/server-sdk": ">=4.0.0 <6.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9",
