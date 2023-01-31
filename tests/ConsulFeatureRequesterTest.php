@@ -2,7 +2,6 @@
 
 namespace LaunchDarkly\Impl\Integrations\Tests;
 
-use LaunchDarkly\FeatureRequester;
 use LaunchDarkly\Integrations\Consul;
 use LaunchDarkly\SharedTest\DatabaseFeatureRequesterTestBase;
 use Consul\Exception\ClientException;
@@ -25,7 +24,7 @@ class ConsulFeatureRequesterTest extends DatabaseFeatureRequesterTestBase
         return $prefix;
     }
 
-    protected function makeRequester($prefix): FeatureRequester
+    protected function makeRequester($prefix)
     {
         $options = array(
             'consul_prefix' => $prefix
