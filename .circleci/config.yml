@@ -22,7 +22,7 @@ jobs:
 
     docker:
       - image: <<parameters.docker-image>>
-      - image: consul
+      - image: hashicorp/consul
 
     steps:
       - checkout
