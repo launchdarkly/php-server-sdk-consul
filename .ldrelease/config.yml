@@ -6,7 +6,7 @@ publications:
 
 jobs:
   - docker:
-      image: ldcircleci/php-sdk-release:3
+      image: ldcircleci/php-sdk-release:5
     template:
       name: php
       skip:
