@@ -2,6 +2,10 @@
 
 All notable changes to the project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [3.2.0] - 2023-10-25
+### Changed:
+- Expanded SDK version support to v6
+
 ## [3.1.0] - 2022-12-28
 ### Changed:
 - Relaxed the SDK version dependency constraint to allow this package to work with the upcoming v5.0.0 release of the LaunchDarkly PHP SDK.
