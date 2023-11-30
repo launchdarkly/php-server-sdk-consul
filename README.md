@@ -1,6 +1,6 @@
 # LaunchDarkly Server-Side SDK for PHP - Consul integration
 
-[![CircleCI](https://circleci.com/gh/launchdarkly/php-server-sdk-consul.svg?style=svg)](https://circleci.com/gh/launchdarkly/php-server-sdk-consul)
+[![Run CI](https://github.com/launchdarkly/php-server-sdk-consul/actions/workflows/ci.yml/badge.svg)](https://github.com/launchdarkly/php-server-sdk-consul/actions/workflows/ci.yml)
 [![Packagist](https://img.shields.io/packagist/v/launchdarkly/server-sdk-consul.svg?style=flat-square)](https://packagist.org/packages/launchdarkly/server-sdk-consul)
 [![Documentation](https://img.shields.io/static/v1?label=GitHub+Pages&message=API+reference&color=00add8)](https://launchdarkly.github.io/php-server-sdk-consul)
 
