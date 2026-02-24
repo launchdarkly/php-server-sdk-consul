@@ -2,6 +2,13 @@
 
 All notable changes to the project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [3.2.1](https://github.com/launchdarkly/php-server-sdk-consul/compare/3.2.0...3.2.1) (2026-02-24)
+
+
+### Miscellaneous Chores
+
+* Update fetch-depth comment ([#24](https://github.com/launchdarkly/php-server-sdk-consul/issues/24)) ([963f27f](https://github.com/launchdarkly/php-server-sdk-consul/commit/963f27f04407aa182de3f6cdcc3202173b532a1a))
+
 ## [3.2.0] - 2023-10-25
 ### Changed:
 - Expanded SDK version support to v6
@@ -20,4 +27,3 @@ It will not work with the 5.x version of the Consul client, because the package 
 
 ## [1.0.0] - 2021-08-06
 Initial release, for use with version 4.x of the LaunchDarkly PHP SDK.
-
