@@ -20,7 +20,7 @@ jobs:
           - 8500:8500
 
     steps:
-      - uses: googleapis/release-please-action@v4
+      - uses: googleapis/release-please-action@7987652d64b54f048af0955c00c6c20444d67d5a # v4
         id: release
 
       - uses: actions/checkout@v4
