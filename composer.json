@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": ">=7.4",
+        "php": ">=8.2",
         "friendsofphp/consul-php-sdk": "^5",
         "launchdarkly/server-sdk": ">=4.0.0 <7.0.0"
     },
